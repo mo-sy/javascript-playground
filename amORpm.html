@@ -11,10 +11,16 @@
       const date = new Date(); // 현재 날짜와 시간을 갖는 객체 생성
       const hour = date.getHours(); // 현재 시간을 0 ~ 23 사이의 값으로 출력하는 메소드
 
-      if (hour < 12) {
-        console.log(`지금은 ${hour}시 입니다. 오전입니다.`);
+      if (hour < 11) {
+        console.log(`지금 시각은 ${hour}시, 아침 먹을 시간입니다.`);
       } else {
-        console.log(`지금은 ${hour}시 입니다. 오후입니다.`);
+        if (hour < 15) {
+          console.log(
+            `지금 시각은 ${hour}시, 3시 전이니까 점심 먹을 시간입니다.`
+          );
+        } else {
+          console.log(`3시가 넘었어요. 지금은 ${hour}시니까 슬슬 저녁 드세요.`);
+        }
       }
 
       // if 조건문의 조건 하나를 처리하는 횟수가 줄어 실제 성능 향상에
