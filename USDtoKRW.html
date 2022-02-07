@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>달러에서 원화로 환율을 변환하는 프로그램</title>
+  </head>
+  <body>
+    <script>
+      // 환율은 1달러 = 1207원이라고 가정
+
+      const input = prompt("원화(KRW)로 변환할 달러(USD)를 입력하세요.");
+      const usd = Number(input);
+      const krw = usd * 1207;
+
+      // 출력
+      alert(`입력하신 ${usd}USD는 원화로 ${krw}KRW 입니다.`);
+    </script>
+  </body>
+</html>
