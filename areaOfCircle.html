@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>원의 넓이와 둘레를 구하는 프로그램</title>
+  </head>
+  <body>
+    <script>
+      // 사용자로부터 원의 반지름을 입력받기
+      // 입력받은 반지름 값으로 원의 넓이와 둘레 구하기
+      // 넓이 = 3.14 * 반지름
+      // 둘레 = 2 * 3.14 * 반지름
+
+      // 숫자 입력받기
+      const input = prompt("원의 반지름을 입력하세요");
+
+      const radius = Number(input);
+      const area = 3.14 * radius * radius;
+      const circumference = 2 * 3.14 * radius;
+
+      alert(
+        `입력하신 반지름은 ${radius} \n 원의 넓이는 ${area} \n 원의 둘레는 ${circumference} `
+      );
+
+      // 출력
+    </script>
+  </body>
+</html>
